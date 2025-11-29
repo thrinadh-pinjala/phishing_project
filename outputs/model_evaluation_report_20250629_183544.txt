@@ -1,0 +1,36 @@
+PHISHING DETECTION MODEL EVALUATION REPORT
+=======================================================
+Generated: 2025-06-29 18:35:45
+Processed Data: data/processed/processed_phishing_data.csv
+
+DATASET INFORMATION
+-------------------------
+Dataset Shape: (73914, 112)
+Label Distribution: {1: 64016, 0: 9898}
+Features: 102
+
+MODEL EVALUATION RESULTS
+------------------------------
+  Bayesian Model:
+    Status: FAILED
+    Error: Error converting to integer: invalid literal for int() with base 10: 'verified_online'
+
+  Probabilistic Decision Tree:
+    Status: FAILED
+    Error: could not convert string to float: 'verified_online'
+
+  Gaussian Mixture Model:
+    Status: FAILED
+    Error: could not convert string to float: 'Phishing_Legitimate_full'
+
+  Ensemble Framework:
+    Status: FAILED
+    Error: '<' not supported between instances of 'float' and 'str'
+
+EXECUTION SUMMARY
+--------------------
+Total Models Tested: 4
+Successful Runs: 0
+Failed Runs: 4
+Success Rate: 0.0%
+Total Execution Time: 0.00s
